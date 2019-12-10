@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Xamarin.iOS", "Jel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.Xamarin", "Jellyfin.Xamarin\Jellyfin.Xamarin.csproj", "{967A53D0-9430-4E33-A527-6E513BE2A1EF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.ApiClient", "jellyfin-apiclient-csharp\Emby.ApiClient\Jellyfin.ApiClient.csproj", "{4E53F7CE-E6CE-4E4F-94E3-D5962C71A5ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.ApiClient", "jellyfin-apiclient-csharp\Jellyfin.ApiClient\Jellyfin.ApiClient.csproj", "{4E53F7CE-E6CE-4E4F-94E3-D5962C71A5ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
