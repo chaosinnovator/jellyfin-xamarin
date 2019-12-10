@@ -1,0 +1,3 @@
+[submodule "jellyfin-apiclient-csharp"]
+	path = jellyfin-apiclient-csharp
+	url = https://github.com/chaosinnovator/jellyfin-apiclient-csharp.git
