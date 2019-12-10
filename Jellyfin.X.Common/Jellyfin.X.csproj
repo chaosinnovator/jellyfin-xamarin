@@ -11,7 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="MediaBrowser.Common" Version="3.3.10" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\jellyfin-apiclient-csharp\Jellyfin.ApiClient\Jellyfin.ApiClient.csproj" />
   </ItemGroup>
 </Project>

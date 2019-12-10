@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Jellyfin.Xamarin.iOS
+namespace Jellyfin.X.iOS
 {
     public class Application
     {

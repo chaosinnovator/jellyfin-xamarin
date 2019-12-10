@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Xamarin.UWP", "Jellyfin.Xamarin.UWP\Jellyfin.Xamarin.UWP.csproj", "{03B05C09-DE1A-4F23-946C-6E08CC9740C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.X.UWP", "Jellyfin.X.UWP\Jellyfin.X.UWP.csproj", "{03B05C09-DE1A-4F23-946C-6E08CC9740C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Xamarin.Android", "Jellyfin.Xamarin.Android\Jellyfin.Xamarin.Android.csproj", "{B28BB134-B5DC-4B5A-A75D-DA36C6ECF41D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.X.Droid", "Jellyfin.X.Droid\Jellyfin.X.Droid.csproj", "{B28BB134-B5DC-4B5A-A75D-DA36C6ECF41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Xamarin.iOS", "Jellyfin.Xamarin.iOS\Jellyfin.Xamarin.iOS.csproj", "{4A45AF93-713F-4794-A6E0-00C8A2450DA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.X.iOS", "Jellyfin.X.iOS\Jellyfin.X.iOS.csproj", "{4A45AF93-713F-4794-A6E0-00C8A2450DA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.Xamarin", "Jellyfin.Xamarin\Jellyfin.Xamarin.csproj", "{967A53D0-9430-4E33-A527-6E513BE2A1EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.X", "Jellyfin.X.Common\Jellyfin.X.csproj", "{967A53D0-9430-4E33-A527-6E513BE2A1EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.ApiClient", "jellyfin-apiclient-csharp\Jellyfin.ApiClient\Jellyfin.ApiClient.csproj", "{4E53F7CE-E6CE-4E4F-94E3-D5962C71A5ED}"
 EndProject

@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Jellyfin.Xamarin.UWP
+namespace Jellyfin.X.UWP
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

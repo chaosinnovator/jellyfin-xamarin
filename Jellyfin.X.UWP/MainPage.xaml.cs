@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Jellyfin.Xamarin.UWP
+namespace Jellyfin.X.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace Jellyfin.Xamarin.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Jellyfin.Xamarin.App());
+            LoadApplication(new Jellyfin.X.App());
         }
     }
 }

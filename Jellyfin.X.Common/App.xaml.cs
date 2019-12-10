@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Jellyfin.Xamarin
+namespace Jellyfin.X
 {
     public partial class App : Application
     {
