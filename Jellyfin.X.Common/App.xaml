@@ -6,6 +6,34 @@
              mc:Ignorable="d"
              x:Class="Jellyfin.X.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/JellyfinStyleResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <!-- For some reason merging the resource dictionary above isn't working, so copied below-->
+            <Color x:Key="JellyfinPageBackgroundColor">#101010</Color>
+            <Color x:Key="JellyfinPrimaryForegroundColor">#ffffff</Color>
+            <Color x:Key="JellyfinButtonBackgroundColor">#303030</Color>
+            <Color x:Key="JellyfinButtonSubmitBackgroundColor">#00a4dc</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource JellyfinPrimaryForegroundColor}" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource JellyfinPrimaryForegroundColor}" />
+            </Style>
+            <Style x:Key="JellyfinButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource JellyfinButtonBackgroundColor}" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="Padding" Value="0.9, 1" />
+            </Style>
+            <Style x:Key="JellyfinButtonSubmit" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource JellyfinButtonSubmitBackgroundColor}" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="Padding" Value="0.9, 1" />
+            </Style>
+            <Style x:Key="JellyfinIconButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Helpers="clr-namespace:Jellyfin.X.Helpers"
+             xmlns:Controls="clr-namespace:Jellyfin.X.Controls"
+             mc:Ignorable="d"
+             x:Class="Jellyfin.X.Views.Login"
+             BackgroundColor="{StaticResource JellyfinPageBackgroundColor}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="30" >
+            <Label Text="Please sign in" FontSize="Large" HorizontalOptions="Center" />
+
+            <StackLayout x:Name="usersView" IsVisible="False">
+                <!-- ItemCardRowView if visible users found -->
+                <Controls:ItemCardsRow x:Name="userCollection" ScrollControlsVisible="True" HeightRequest="280" />
+                <!-- if none found, use form instead -->
+                <Button Style="{StaticResource JellyfinButton}" Text="Manual Login" Clicked="ManualButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout x:Name="manualLoginView" IsVisible="False">
+                <Label Text="User" />
+                <Entry x:Name="usernameEntry" />
+                <Label Text="Password" />
+                <Entry x:Name="passwordEntry" IsPassword="True" />
+                <CheckBox />
+                <Label Text="Remember me" />
+                <Button Style="{StaticResource JellyfinButtonSubmit}" Text="Sign in" Clicked="SignInButton_Clicked" />
+                <Button x:Name="cancelButton" IsVisible="False" Style="{StaticResource JellyfinButton}" Text="Cancel" Clicked="CancelButton_Clicked" /> <!-- only if there are visible users found -->
+            </StackLayout>
+
+            <Button Style="{StaticResource JellyfinButton}" Text="Forgot Password" Clicked="ForgotButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

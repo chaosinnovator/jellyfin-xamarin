@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:Helpers="clr-namespace:Jellyfin.X.Helpers"
+      mc:Ignorable="d"
+      x:Class="Jellyfin.X.Controls.ItemCard">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="{Binding ComputedInnerHeight}"/>
+        <RowDefinition Height="auto"/>
+        <RowDefinition Height="auto"/>
+    </Grid.RowDefinitions>
+    <Frame Grid.Row="0" IsVisible="{Binding HasImage, Converter={Helpers:InverseBoolConverter}}" BackgroundColor="{Binding BaseColor}" BorderColor="{Binding BorderColor}" CornerRadius="0">
+        <Frame.Content>
+            <Label Text="{Binding Title}" TextColor="{Binding BaseTextColor}" LineBreakMode="WordWrap" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        </Frame.Content>
+    </Frame>
+    <Image Grid.Row="0" IsVisible="{Binding HasImage}" Source="{Binding ImageSourceUri}" />
+    <Label Grid.Row="1" Text="{Binding Title}" HorizontalTextAlignment="Center" LineBreakMode="TailTruncation" />
+    <Label Grid.Row="2" IsVisible="{Binding DetailVisible}" Text="{Binding Detail}" LineBreakMode="TailTruncation" />
+</Grid>
